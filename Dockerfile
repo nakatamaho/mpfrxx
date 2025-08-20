@@ -88,6 +88,5 @@ RUN git clone --branch cleanup --single-branch --depth 1 \
  && cd mpfrxx \
  && git remote set-url origin git@github.com:nakatamaho/mpfrxx.git \
  && cd setup && bash setup_gmp.sh
- && cd setup && bash setup_mpfr.sh
- && cd setup && bash setup_mpc.sh
-
+ && bash setup_mpfr.sh
+ && bash setup_mpc.sh
